@@ -1,0 +1,232 @@
+/* General Container */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body {
+    font-family: 'Patrick Hand', cursive;
+} 
+
+.orange {
+    color: rgb(245, 156, 0);
+}
+
+.brown {
+    color: rgb(168, 113, 19);
+}
+
+.dark_brown {
+    color: rgb(125, 78, 36);
+}
+
+.yellow {
+    color: rgb(255, 213, 24);
+}
+
+.title {
+    text-align: center;
+    margin: 25px;
+}
+
+/* Navbar and Banner */
+.container-fluid-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_intro {
+    text-align: center;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 600px !important; 
+}
+
+.my_navbar {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .show > .nav-link {
+    color: rgb(125, 78, 36);
+}
+
+.nav-color {
+    font-size: 22px;
+    color: rgb(125, 78, 36);
+}
+
+.nav-color:hover {
+    background-color: rgb(125, 78, 36);
+    color: #ffc00a;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.55);
+    border-color: rgba(255,255,255,1);
+}
+
+/* Add Products */
+.admin_products {
+    display: flex;
+}
+
+label {
+    font-size: 20px;
+}
+
+.form_spacing {
+    margin: 15px;
+}
+
+.input_name_desc > input {
+    margin-bottom: 10px;
+}
+
+.add_product {
+    width: 700px;
+    height: fit-content;
+    border: 2px solid rgb(168, 113, 19);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.btn_add {
+    text-align: center;
+}
+
+.btn_add > button {
+    width: 80px;
+    border: 2px solid #ffc00a;
+    border-radius: 15px;
+    color: white;
+    background-color: #ffc00a;
+    font-size: large;
+    margin: 15px;
+}
+
+.btn_add > button:hover {
+    background-color: #f5c000;
+    border: 2px solid #f5c000;
+}
+
+/* Update Products */
+.update_product {
+    width: 700px;
+    border: 2px solid rgb(168, 113, 19);
+    border-radius: 15px;
+    margin: 20px;
+    height: fit-content;
+}
+
+.btn_update {
+    text-align: center;
+}
+
+.btn_update > button {
+    width: 80px;
+    border: 2px solid #ffc00a;
+    border-radius: 15px;
+    color: white;
+    background-color: #ffc00a;
+    font-size: large;
+    margin: 15px;
+}
+
+.btn_update > button:hover {
+    background-color: #f5c000;
+    border: 2px solid #f5c000;
+}
+
+/* Remove Product */
+.remove_product {
+    width: 500px;
+    border: 2px solid rgb(168, 113, 19);
+    border-radius: 15px;
+    margin: 20px;
+    height: fit-content;
+}
+
+.btn_remove {
+    text-align: center;
+}
+
+#remove_button {
+    width: 80px;
+    border: 2px solid red;
+    border-radius: 15px;
+    color: white;
+    background-color: red;
+    font-size: large;
+}
+
+#remove_button:hover {
+    background-color: rgb(252, 43, 43);
+    border: 2px solid rgb(252, 43, 43);
+}
+
+/* Customer Table */
+.customer_form {
+    border: 2px solid rgb(168, 113, 19);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.customer_table {
+    margin: 20px;
+    border: 2px solid rgb(168, 113, 19);
+    border-radius: 15px;
+}
+
+.btn-customer {
+    text-align: center;
+}
+
+.btn-customer > button {
+    width: 100px;
+    border: 2px solid #ffc00a;
+    border-radius: 15px;
+    color: white;
+    background-color: #ffc00a;
+    font-size: large;
+    margin: 20px;
+}
+
+.btn-customer > button:hover {
+    background-color: #f5c000;
+    border: 2px solid #f5c000;
+}
